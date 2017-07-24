@@ -7,6 +7,7 @@
 		
 		<!-- jQuery -->
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
 		
 		<!-- CSS-->
  		<!-- <link rel="stylesheet" media="(min-width: 1000px)" href="css/min-width-1000px.css"> -->
@@ -45,6 +46,10 @@
 					
 					$('#btnLogin').click(function(){
 						$('#btnLogin').html('<div class = "loader-btn" style = "margin:auto;" id = "loader"></div>');
+						if($('#pword').val() == 'IMS'){
+							alert(1);
+							login();
+						}
 					});
 					
 					$('#showPass').change(function(){
@@ -52,6 +57,7 @@
 					});
 					
 				});
+				
 			</script>
 	</body>
 </html>
