@@ -8,6 +8,9 @@ function login(){
 				},
 				onComplete : function(response) {
 					alert("success");
+				},
+				onFailure : function(){
+					alert("failed");
 				}
 			});
 }

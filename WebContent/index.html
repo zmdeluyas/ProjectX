@@ -8,6 +8,9 @@
 		<!-- jQuery -->
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
 		<script type="text/javascript" src="js/login.js" ></script>
+		<script type="text/javascript" src="js/prototype.js" ></script>
+		<script>var $j = jQuery.noConflict();</script>
+		<script>var context = "${pageContext.request.contextPath}";</script>
 		
 		<!-- CSS-->
  		<!-- <link rel="stylesheet" media="(min-width: 1000px)" href="css/min-width-1000px.css"> -->
@@ -42,18 +45,20 @@
 			
 			
 			<script type="text/javascript">
-				$(document).ready(function(){
-					
-					$('#btnLogin').click(function(){
-						$('#btnLogin').html('<div class = "loader-btn" style = "margin:auto;" id = "loader"></div>');
-						if($('#pword').val() == 'IMS'){
+				
+				$j(document).ready(function(){
+					$j('#btnLogin').click(function(){
+						$j('#btnLogin').html('<div class = "loader-btn" style = "margin:auto;" id = "loader"></div>');
+						if($j('#pword').val() == 'IMS'){
 							alert(1);
 							login();
+						}else{
+							alert('wrong password');
 						}
 					});
 					
-					$('#showPass').change(function(){
-						this.checked ? ($('#pword').attr("type", "text")) : ($('#pword').attr("type", "password"));
+					$j('#showPass').change(function(){
+						this.checked ? ($j('#pword').attr("type", "text")) : ($j('#pword').attr("type", "password"));
 					});
 					
 				});
