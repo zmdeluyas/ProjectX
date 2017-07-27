@@ -24,7 +24,6 @@ public class LoginController extends HttpServlet {
 		
 		if(action.equals("login")){
 			page = "pages/main.jsp";
-			request.setAttribute("page", page);
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(page);

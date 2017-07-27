@@ -1,5 +1,6 @@
-a { font-size: 14px; }
-
+#forgotPass{
+	font-size:14px;
+}
 .container-bordered {
 	-webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
@@ -9,4 +10,8 @@ a { font-size: 14px; }
 	border-radius: 2px;
 	padding: 20px;
 	width: auto;
+}
+
+.input-group{
+	margin-top:10px;
 }

@@ -67,6 +67,9 @@ button {
 	border:1px solid #E67E22; 
 	color: white;
 }
+.btn-full-width{
+	width:100%;
+}
 
 button:hover {
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
