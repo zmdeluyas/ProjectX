@@ -25,7 +25,6 @@
 	color:black;
 }
 
-a{ font-size: 14px; }
 
 
 #side-nav {
@@ -52,6 +51,7 @@ a{ font-size: 14px; }
 }
 #navbar-side li a:hover {
 	color: white;
+	fill: white;
 	text-decoration: none;
 	cursor: pointer;
 }

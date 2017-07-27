@@ -11,13 +11,16 @@ body { margin:0; padding:0; }
 
 h1, h2, h3, h4, h5{ padding: 0 1%; }
 
+svg{ display: block; }
+
 label {   
 	font-size:14px;
-	 position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+	position: relative;
+  	top: 50%;
+  	
+ 	-webkit-transform: translateY(-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
 }
 
 input[type="text"], input[type="password"], select, textarea, option { width:100%; }
